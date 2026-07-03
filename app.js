@@ -46,7 +46,7 @@ const BLACKLISTED_KEYWORDS = ['spam', 'arnaque', 'insulte'];
 
 const hashPassword = (password) => {
   // use md5
-  newPassword = password + 'salt'; // Ajouter un sel pour renforcer la sécurité
+  const newPassword = password + 'salt'; // Ajouter un sel pour renforcer la sécurité
   return md5(newPassword); // Remplacez ceci par le mot de passe haché
 }
 
@@ -347,7 +347,6 @@ app.post('/reaction', async (req, res) => {
 });
 
 app.get('/posts', async (req, res) => {
-  const { title, content } = req.body;
   const token = req.headers['authorization'];
   // Vérifier si le token est présent
   if (!token) {

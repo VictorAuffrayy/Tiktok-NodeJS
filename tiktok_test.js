@@ -351,7 +351,7 @@ describe('TikTok features', () => {
       await request(app).post(`/posts/${carolPost.body.id}/like`).set('Authorization', aliceToken);
 
       // Alice poste une vidéo peu likée mais est suivie par bob
-      const alicePost = await request(app)
+      await request(app)
         .post('/posts')
         .set('Authorization', aliceToken)
         .send({ title: 'Alice followed', content: 'desc', videoUrl: 'https://cdn.example.com/a2.mp4' });
