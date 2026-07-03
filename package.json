@@ -1,0 +1,31 @@
+{
+    "name": "coursp4",
+    "version": "1.0.0",
+    "description": "Cours P4",
+    "main": "app.js",
+    "scripts": {
+        "start": "node hello.js",
+        "test": "mocha app_test.js tiktok_test.js advanced_test.js --timeout 10000 --exit",
+        "coverage": "nyc --reporter=text --reporter=html --reporter=lcov npm test"
+    },
+    "author": "Votre Nom",
+    "license": "Votre licence",
+    "dependencies": {
+        "bayes": "^1.0.0",
+        "chai": "^4.3.10",
+        "colors": "^1.4.0",
+        "express": "^4.17.1",
+        "knex": "^3.1.0",
+        "limdu": "^1.0.0",
+        "md5": "^2.3.0",
+        "mocha": "^10.8.2",
+        "nodemon": "^3.0.2",
+        "prompt-sync": "^4.2.0",
+        "sequelize": "^6.35.1",
+        "sqlite3": "^5.1.6",
+        "supertest": "^6.3.3"
+    },
+    "devDependencies": {
+        "nyc": "^17.1.0"
+    }
+}

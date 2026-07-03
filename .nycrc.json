@@ -1,0 +1,29 @@
+{
+  "all": true,
+  "include": [
+    "app.js",
+    "User.js",
+    "Post.js",
+    "Comment.js",
+    "Reaction.js",
+    "Session.js",
+    "Follow.js",
+    "PostLike.js",
+    "sequelize.js"
+  ],
+  "exclude": [
+    "node_modules/**",
+    "coverage/**",
+    "app_test.js",
+    "tiktok_test.js",
+    "advanced_test.js",
+    "migrate.js",
+    "save.js"
+  ],
+  "reporter": [
+    "text",
+    "html",
+    "lcov"
+  ],
+  "check-coverage": false
+}
